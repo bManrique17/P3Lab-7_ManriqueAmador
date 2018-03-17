@@ -1,0 +1,14 @@
+Operacion:_2/3_+_5/6_=_3/2
+Operacion:_2/3_+_5/6_=_3/2
+Operacion:_2/2_+=_5/6
+Operacion:_3/2_-_5/6_=_2/3
+Operacion:_3/3_-=_5/6
+Operacion:_2/3_*_5/6_=_5/9
+Operacion:_2/9_*=_5/6
+Operacion:_5/9_/_5/6_=_2/3
+Operacion:_5/3_/=_5/6
+Operacion:_7/8_-_1/2_=_3/8
+Operacion:_1/2_-_7/8_=_-6/16
+Operacion:_1/2_-_7/8_=_-6/16
+Operacion:_2/3_*_1/2_=_1/3
+Operacion:_-10/5_+_1/2_=_-15/10
