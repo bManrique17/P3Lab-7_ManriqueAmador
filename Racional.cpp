@@ -8,6 +8,15 @@ Racional::Racional(){}
 
 Racional::Racional(int num,int den){
     int mayor,menor,cont;
+    bool numB = false, denB = false;
+    if(num<0){
+        num*=-1;
+        numB = true;   
+    }
+    if(den<0){
+        den*=-1;
+        denB = true;   
+    }
     if(num>den){
         mayor = num;
         menor = den;
@@ -15,6 +24,7 @@ Racional::Racional(int num,int den){
         mayor = den;
         menor = num;
     }
+    
     do{
         cont = 0;
         for(int i=1 ; i<=menor ;i++){
@@ -29,8 +39,24 @@ Racional::Racional(int num,int den){
         }
     }while(cont>0);
 
-    numerador = num;
-    denominador = den;
+    if(numB && denB){
+        numerador = (num)*-1;
+        denominador = (den)*-1;
+    }else{
+        if(numB){
+            numerador = (num)*-1;
+            denominador = (den);
+        }else{
+            if(denB){
+                numerador = (num);
+                denominador = (den)*-1;
+            }else{
+                numerador = (num);
+                denominador = (den);
+            }
+        }
+    }
+    
 }
 
 
@@ -52,6 +78,15 @@ void Racional::setDenominador(int den){
 
 void Racional::simplificarFraccion(int num, int den){
     int mayor,menor,cont;
+    bool numB = false, denB = false;
+    if(num<0){
+        num*=-1;
+        numB = true;   
+    }
+    if(den<0){
+        den*=-1;
+        denB = true;   
+    }
     if(num>den){
         mayor = num;
         menor = den;
@@ -73,8 +108,23 @@ void Racional::simplificarFraccion(int num, int den){
         }
     }while(cont>0);
 
-    numerador = num;
-    denominador = den;
+    if(numB && denB){
+        numerador = (num)*-1;
+        denominador = (den)*-1;
+    }else{
+        if(numB){
+            numerador = (num)*-1;
+            denominador = (den);
+        }else{
+            if(denB){
+                numerador = (num);
+                denominador = (den)*-1;
+            }else{
+                numerador = (num);
+                denominador = (den);
+            }
+        }
+    }
 }
 
 const Racional* Racional::operator+(const Racional& fraccion)const{

@@ -375,39 +375,3 @@ void guardarArchivo(string operacion){
     
 	escritor.close();
 }
-/*
-vector<Cancion*> DataCanciones:: getCanciones(string file){
-    vector<Cancion*> retval;
-
-    //strng a carater
-    //el string.c_str()
-
-    //abrir archivo
-   ifstream canciones (file.c_str());
-
-    //mientras hay lineas en el archivo
-    if(canciones.is_open()){
-        while(!canciones.eof()){
-            //Leer una linea
-            string line;
-            getline(canciones,line);
-            if(line=="."){
-                break;
-            }
-
-            //Parsearla linea y agrear al vector
-            Cancion* leido= nuevaCancion(line);
-            //TODO: valdar
-            retval.push_back(leido);
-
-        }
-
-        //cerrar al archivo}
-        canciones.close();
-
-    }
-
-    return retval;
-
-
-}*/
