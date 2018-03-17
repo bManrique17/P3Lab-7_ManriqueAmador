@@ -23,15 +23,7 @@ void guardarArchivo(string);
 
 vector <Racional*> listaFracciones;
 
-int main(){
-    Racional* f1 = new Racional(10,18);
-    Racional* f2 = new Racional(10,18);
-    const Racional* res = *f1 + *f2;     
-    cout<<res->getNumerador()<<" / "<<res->getDenominador()<<endl;
-    Racional* f5 = new Racional(5,2);
-    Racional* f4 = new Racional(5,2);
-    *f5 += *f4;
-    cout<<f5->getDenominador();
+int main(){    
     int opcion;    
     do{
         opcion = menu();
